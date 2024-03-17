@@ -15,7 +15,7 @@
 const rectArea = function(sideA, sideB){
   //  const sideA = 3;
   //  const sideB = 2;
-   return (sideA * sideB);
+   return sideA * sideB;
 };
 
 rectArea();
