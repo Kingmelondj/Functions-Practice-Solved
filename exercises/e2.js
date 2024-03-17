@@ -8,10 +8,17 @@
    * The function returns the value of the area of a rectangle (sideA * sideB)
    * The function takes 2 parameters (two sides) to calculate the area from
  * rectArea(3, 2) => 6
-*/
+*/   
 
 // Your function code starts here...
 
+const rectArea = function(sideA, sideB){
+  //  const sideA = 3;
+  //  const sideB = 2;
+   return (sideA * sideB);
+};
+
+rectArea();
 
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
@@ -19,9 +26,12 @@
 
 // Your code goes here:
 
+var room1 = rectArea(4,6);
+var room2 = rectArea(13,3);
+var room3 = rectArea(4,8);
 
 
-/**
+/** 
  * =============================================================
  * Create a function that works as follows:
  * The function name is 'totalRoomsArea'
@@ -33,14 +43,16 @@
 
 // Your code goes here...
 
+function totalRoomsArea(area1, area2, area3) {
+  return area1 + area2 + area3;
+}
 
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
 const result = function () {
-    console.log(/* replace this comment with a function call here... */);
+  console.log(totalRoomsArea(room1, room2, room3)); 
 }
-
 
 
 // === TEST YOURSELF ===
