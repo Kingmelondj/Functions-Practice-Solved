@@ -6,7 +6,7 @@
  * Create a function that works as follows:
  * The function name is 'doesArrayIncludeItemsBetweenVals'
  * given an array of numbers. You can use it as the arr for testing purposes
- * The function take an arr (array), val1 (number) and val2 (number) as arguments.
+ * The function takes an arr (array), val1 (number) and val2 (number) as arguments.
  * The function returns a boolean if array includes an item that is greater than val1 and less than val2
  * The function MUST have 2 return statements: make an early return if the item is found and use the default return otherwise
  * The function MUST be written with NAMED function syntax.
@@ -15,8 +15,19 @@
  */
 
 // Your code goes here...
+// var arr = [2, 4, 2];
+// var val1 = 3;
+// var val2 = 5;
 
 
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > val1 && arr[i] < val2 ) {
+      return true;
+    } 
+  }
+  return false;
+}
 
 
 /**
@@ -35,7 +46,32 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(num1, num2) {
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
+  }
+  else {
+    return(num1+num2)*2
+  }
+}
 
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 === 40 && num2 === 40){
+    return num1 + num2;
+  }
+  else{
+    return (num1+num2)*2
+  }
+}
+
+const getValueWithConditionThree = function (num1, num2) {
+  if (num1 === 40 && num2 === 40){
+    return num1 + num2;
+  }
+  else{
+    return (num1+num2)*2
+  }
+}
 
 
 
